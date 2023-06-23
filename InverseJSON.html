@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Inverse JSON</title>
+  </head>
+  <body>
+    <div>
+      <div class="urlContainer">
+        <label for="url">URL: </label>
+        <input type="text" id="url" value="" onchange="saveValue(this)" />
+        <input type="submit" id="submitQuery" value="Query" />
+      </div>
+      <div class="container">
+        <div class="originalResponse">
+          <p>Original Response</p>
+          <p id="originalOutcome">a</p>
+        </div>
+        <div class="inverseResponse">
+          <p>Inverse Response</p>
+          <p id="inverseOutcome">b</p>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="scripts.js"></script>
+  </body>
+</html>
